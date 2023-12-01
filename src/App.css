@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* VARIABLES */
+
+:root{
+    --red: #e8303c;
+    --gray: #2e2e2e;
+}
+
+/* UTILITY CLASSES */
+
+.container{
+    margin: 0 auto;
+    max-width: 1280;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+/* resets */
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", 'sans-serif';
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto ;
+    padding: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.navbar ul li a, 
+.navbar ul li a:hover{
+    text-decoration: none;
+    color: #6e191f;
+    font-weight: 600;
+}
+
+button{
+    all: unset;
+    background: var(--red);
+    padding: 0 15px;
+    color: white;
+    font-weight: 500;
+    /* border-radius: 10px; */
+}
+
+button:hover{
+    border: 2px solid var(--red);
+    color: var(--red);
+    background: transparent;
+}
+
+/* HERO SECTION */
+
+.hero-section{
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    background-color: lightpink;
+}
+
+.hero-content{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hero-content h1{
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 80px;
+    text-transform: capitalize;
+    max-width: 400px;
+}
+
+.hero-content p{
+    max-width: 400px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.hero-btn {
+    display: flex;
+    flex-direction: row;
+    gap:40px ;
+}
+
+.secondary-btn{
+    background: transparent;
+    color: var(--gray);
+    border: 2px solid var(--gray);
+}
+
+.shopping p{
+    font-size: 10px;
+    margin-bottom: 28px;
+}
+
+.brand-icons{
+    display: flex;
+    gap: 16px;
+}
+
+.hero-img img{
+    /* width: 800px; */
+    /* height: 900px; */
+    border: 1px solid black;
+}
+
+
+.spacer{
+    height: 200px;
+    width: 100px;
+    background-color: #2e2e2e;
+}
